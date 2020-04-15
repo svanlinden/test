@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+            'header header header header'
+            'menu main main right'
+            'menu footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.kak{
+    grid-area: menu;
+}
+
+h1 {
+    grid-area: header;
+    color: white;
+}
+
+nav{
+    grid-area: header;
+    right: 10%;
+}
+p{
+    grid-area: main;
+}
+ul {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+ul li{
+    padding-left: 50px;
+}
